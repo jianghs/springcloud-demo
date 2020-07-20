@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+#          search-locations: ["classpath:config/licensingservice","classpath:config/organizationservice"]
+#          search-locations: classpath:config/organizationservice
+          search-locations: classpath:config/organizationservice,classpath:config/licensingservice

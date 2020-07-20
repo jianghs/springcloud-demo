@@ -1,0 +1,8 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+#    eureka-server-read-timeout-seconds: 5000
