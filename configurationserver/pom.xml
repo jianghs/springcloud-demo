@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.thoughtmechanix</groupId>
-    <artifactId>eurekaserver</artifactId>
+    <artifactId>configurationserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eurekaserver</name>
+    <name>configurationserver</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
