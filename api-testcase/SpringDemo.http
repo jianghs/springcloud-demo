@@ -1,0 +1,11 @@
+GET http://localhost:8802/v1/organization/1
+Accept: application/json
+
+###
+GET http://localhost:8801/v1/organizations/1
+Accept: application/json
+
+###
+GET http://localhost:8000/licensingservice/prod
+Accept: application/json
+

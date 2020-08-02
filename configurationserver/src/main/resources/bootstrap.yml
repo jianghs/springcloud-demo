@@ -1,10 +1,11 @@
 spring:
   application:
-    name: configserver
+    name: config-server
   cloud:
     config:
       server:
         encrypt:
           enabled: false
+
 encrypt:
   key: jianghss

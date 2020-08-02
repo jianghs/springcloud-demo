@@ -3,17 +3,21 @@ spring:
     name: licensingservice
   profiles:
     active: prod
-cloud:
-  config:
-    url: http://localhost:8888
+  cloud:
+    config:
+      uri: http://localhost:8000
 
+## 加密密钥
 encrypt:
   key: jianghss
+## eureka 配置
 eureka:
   instance:
+    ## 注册服务的IP，而不是名称
     prefer-ip-address: true
   client:
     register-with-eureka: true
+    ## 本地副本
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8001/eureka/

@@ -1,8 +1,10 @@
 server:
-  port: 8761
+  port: 8001
 
 eureka:
   client:
+    ## eureka 本身不注册
     register-with-eureka: false
+    ## 不要在本地缓存注册信息
     fetch-registry: false
 #    eureka-server-read-timeout-seconds: 5000

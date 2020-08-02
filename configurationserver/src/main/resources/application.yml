@@ -1,8 +1,9 @@
 server:
-  port: 8888
+  port: 8000
 
 spring:
   profiles:
+    ## native 说明是本地文件
     active: native
   cloud:
     config:
