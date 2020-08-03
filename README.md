@@ -1,4 +1,4 @@
-# SpringCloud 演示 demo
+# SpringCloud 演示 Demo
 
 ## 选型说明
 - 配置中心：Spring Cloud Config

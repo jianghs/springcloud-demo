@@ -1,38 +1,43 @@
-package com.thoughtmechainix.organizationservice.model;
+package com.thoughtmechanix.licenses.vo;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-/**
- * @author jianghongsen
- */
-@Entity
-@Table(name = "organization")
-public class Organization {
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long organizationId;
+public class LicenseVO {
+    private Long id;
 
-    @Column(name = "name", nullable = false)
+    private String productName;
+
+    private String type;
+
     private String name;
 
-    @Column(name = "contact_name", nullable = false)
     private String contactName;
 
-    @Column(name = "contact_email", nullable = false)
     private String contactEmail;
 
-    @Column(name = "contact_phone", nullable = false)
     private String contactPhone;
 
-    public Long getOrganizationId() {
-        return organizationId;
+    public Long getId() {
+        return id;
     }
 
-    public void setOrganizationId(Long organizationId) {
-        this.organizationId = organizationId;
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getName() {

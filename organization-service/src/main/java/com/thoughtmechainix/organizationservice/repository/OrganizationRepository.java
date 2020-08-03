@@ -10,8 +10,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface OrganizationRepository extends CrudRepository<Organization, String> {
 
-    Organization findByOrganizationId(int id);
+    Organization findByOrganizationId(long id);
 
-    void deleteByOrganizationId(int id);
+    void deleteByOrganizationId(long id);
 
 }

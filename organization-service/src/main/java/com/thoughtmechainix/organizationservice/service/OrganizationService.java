@@ -11,24 +11,30 @@ import javax.transaction.Transactional;
  * @author jianghongsen
  */
 @Service
-@Transactional(rollbackOn = Exception.class)
 public class OrganizationService {
-    @Autowired
     OrganizationRepository organizationRepository;
 
-    public Organization getOrg(int id) {
+    @Autowired
+    public void setOrganizationRepository(OrganizationRepository organizationRepository) {
+        this.organizationRepository = organizationRepository;
+    }
+
+    public Organization getOrg(long id) {
         return organizationRepository.findByOrganizationId(id);
     }
 
+    @Transactional(rollbackOn = Exception.class)
     public Organization saveOrg(Organization organization) {
         return organizationRepository.save(organization);
     }
 
+    @Transactional(rollbackOn = Exception.class)
     public Organization updateOrg(Organization organization) {
         return organizationRepository.save(organization);
     }
 
-    public void deleteOrg(int id) {
+    @Transactional(rollbackOn = Exception.class)
+    public void deleteOrg(long id) {
         organizationRepository.deleteByOrganizationId(id);
     }
 }

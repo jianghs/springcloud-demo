@@ -17,12 +17,12 @@ public class OrganizationServiceController {
 
 
     @RequestMapping(value="/organization/{organizationId}",method = RequestMethod.GET)
-    public Organization getOrganization(@PathVariable("organizationId") int organizationId) {
+    public Organization getOrganization(@PathVariable("organizationId") long organizationId) {
         return orgService.getOrg(organizationId);
     }
 
     @RequestMapping(value="/organization/{organizationId}",method = RequestMethod.PUT)
-    public void updateOrganization( @PathVariable("organizationId") int orgId, @RequestBody Organization org) {
+    public void updateOrganization( @PathVariable("organizationId") long orgId, @RequestBody Organization org) {
         org.setOrganizationId(orgId);
         orgService.updateOrg( org );
     }
@@ -34,7 +34,7 @@ public class OrganizationServiceController {
 
     @RequestMapping(value="/organization/{organizationId}",method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteOrganization( @PathVariable("organizationId") int orgId) {
+    public void deleteOrganization( @PathVariable("organizationId") long orgId) {
         orgService.deleteOrg(orgId);
     }
 }

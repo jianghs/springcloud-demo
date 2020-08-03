@@ -14,7 +14,7 @@ public class License {
 
     @Id
     @Column(name = "id", nullable = false)
-    private int id;
+    private Long id;
 
     @Column(name = "product_name", nullable = false)
     private String productName;
@@ -23,13 +23,13 @@ public class License {
     private String type;
 
     @Column(name = "organization_id", nullable = false)
-    private int organizationId;
+    private Long organizationId;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -49,11 +49,11 @@ public class License {
         this.type = type;
     }
 
-    public int getOrganizationId() {
+    public Long getOrganizationId() {
         return organizationId;
     }
 
-    public void setOrganizationId(int organizationId) {
+    public void setOrganizationId(Long organizationId) {
         this.organizationId = organizationId;
     }
 }

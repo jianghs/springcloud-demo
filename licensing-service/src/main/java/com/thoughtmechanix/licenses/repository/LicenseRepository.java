@@ -16,14 +16,12 @@ public interface LicenseRepository extends CrudRepository<License, String> {
      * @param organizationId
      * @return Result<License>
      */
-    List<License> findByOrganizationId(int organizationId);
+    List<License> findByOrganizationId(long organizationId);
 
     /**
-     * find By organizationId and licenseId
-     *
-     * @param organizationId
+     * find By licenseId
      * @param id
      * @return Result<License>
      */
-    License findByOrganizationIdAndId(int organizationId, int id);
+    License findLicenseById(long id);
 }
