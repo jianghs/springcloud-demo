@@ -3,7 +3,7 @@
 ## 选型说明
 - 配置中心：Spring Cloud Config
 - 注册中心：Eureka
-- 服务发现：Spring DiscoveryClient/带有Ribbon功能的Spring RestTemplate/Feign
+- 服务发现：Spring DiscoveryClient/带有Ribbon功能的Spring RestTemplate/Feign（推荐）
 
 ## 基础
 
@@ -23,6 +23,7 @@
 许可证服务：
 - 数据库配置依赖配置中心
 - 许可证服务注册至注册中心
+- 许可证服务调用组织服务
 
 
 ### organization-service(8802)
