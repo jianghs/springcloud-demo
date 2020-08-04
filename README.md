@@ -4,6 +4,7 @@
 - 配置中心：Spring Cloud Config
 - 注册中心：Eureka
 - 服务发现：Spring DiscoveryClient/带有Ribbon功能的Spring RestTemplate/Feign（推荐）
+- 客户端弹性：Hystrix
 
 ## 基础
 

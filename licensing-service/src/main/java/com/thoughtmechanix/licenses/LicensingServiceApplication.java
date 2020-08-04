@@ -2,6 +2,7 @@ package com.thoughtmechanix.licenses;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -18,6 +19,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 // 只是给 OpenFeign 使用
 @EnableFeignClients
+@EnableCircuitBreaker
 public class LicensingServiceApplication {
 
     // 只是给带有 Ribbon 功能的 Spring RestTemplate 使用

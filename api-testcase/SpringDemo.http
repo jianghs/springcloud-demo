@@ -1,3 +1,7 @@
+GET http://localhost:8801/v1/licenses/organization/1
+Accept: application/json
+
+###
 GET http://localhost:8801/v1/licensesAndOrganization/4/feign
 Accept: application/json
 

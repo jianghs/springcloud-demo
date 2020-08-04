@@ -32,7 +32,7 @@ public class LicenseServiceController {
         return licenseService.getLicense(licenseId);
     }
 
-    @RequestMapping(value = "/licenses/{organizationId}", method = RequestMethod.GET)
+    @RequestMapping(value = "/licenses/organization/{organizationId}", method = RequestMethod.GET)
     public List<License> getLicense(@PathVariable("organizationId") int organizationId) {
         return licenseService.getLicensesByOrg(organizationId);
     }
